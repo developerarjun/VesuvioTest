@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VesuvioTask", "VesuvioTask\VesuvioTask.csproj", "{ABB16F58-E7F3-45FE-80F0-99701CDFF0DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABB16F58-E7F3-45FE-80F0-99701CDFF0DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB16F58-E7F3-45FE-80F0-99701CDFF0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB16F58-E7F3-45FE-80F0-99701CDFF0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB16F58-E7F3-45FE-80F0-99701CDFF0DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {713A1538-B206-4D42-9968-2079022D25EB}
+	EndGlobalSection
+EndGlobal
