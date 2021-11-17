@@ -1,0 +1,45 @@
+﻿@page
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-4">Total Number Of User Join</div>
+        <div class="col-4"><span id="totaluser">0</span></div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+   
+</div>
+<div class="row">
+    <div class="col-12">
+        <hr />
+    </div>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script>
+    "use strict";
+    var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+
+    connection.on("ReceiveMessage", function (user) {
+        var li = document.createElement("li");
+        document.getElementById("messagesList").appendChild(li);
+        li.textContent = `${user} joined the group`;
+        var spanToChance = document.getElementById("totaluser");
+        spanToChance.innerHTML = parseInt(spanToChance.innerHTML) + 1;
+        console.log(spanToChange.innerHTML);
+
+    });
+    connection.start().then(function () {
+        console.log('Connection start');
+    }).catch(function (err) {
+        return console.error(err.toString());
+    });
+
+</script>
